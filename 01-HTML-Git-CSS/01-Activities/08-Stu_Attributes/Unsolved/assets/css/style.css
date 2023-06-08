@@ -1,0 +1,29 @@
+.first  {
+  background-color: lemonchiffon;
+}
+
+#title {
+  color: blue;
+  background-color: white;
+
+}
+
+#contact {
+  color: blue;
+  background-color: white;
+}
+
+#p1 {
+  color: black;
+  background-color: orange;
+}
+
+#p2 {
+    color: black;
+    background-color: lightblue;
+}
+
+#p3 {
+  color: black;
+  background-color: darkorange;
+}
