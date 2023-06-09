@@ -50,6 +50,7 @@ header {
 /* Box 2 in Square 2 */
 #absolute-box-2 {
   position: absolute;
-  left: 700px;
+  left: 700px; 
+  /* absolute moved 700px and moved to same line as 1 */
   top: 0px;
 }

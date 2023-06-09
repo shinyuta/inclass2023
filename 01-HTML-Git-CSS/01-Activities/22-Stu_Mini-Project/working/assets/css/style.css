@@ -1,0 +1,77 @@
+* {
+  font-family: Verdana;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  background-color: green;
+}
+
+nav ul li {
+  /* used nav ul li to make it more specific
+  since we probably don't want other lists to be displayed inline */
+  display: inline;
+}
+
+nav {
+  text-align: right;
+  border-bottom: 5px solid burlywood;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  line-height: 30px;
+  font-size: 20px;
+  margin: 15px;
+}
+
+.img_caption {
+  text-align: center;
+  font-weight: bold;
+  /* background-color: burlywood; */
+}
+
+img {
+  margin-top: 30px;
+}
+
+#caption {
+  padding-bottom: 20px;
+}
+
+.form {
+  text-align: center;
+  border-top: 10px solid burlywood; 
+  background-color: bisque;
+  display: block;
+}
+
+.form-button {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  background-color:;
+}
+
+.form-example {
+  margin: 5px;
+  margin-top: 10px
+}
+
+.name-email {
+  /* border: 10px solid burlywood; */
+  position relative;
+  margin: 0, auto;
+}
+
+footer {
+  text-align: center;
+  background-color: green;
+  color: white;
+  line-height: 30px;
+  font-weight: bold;
+}
