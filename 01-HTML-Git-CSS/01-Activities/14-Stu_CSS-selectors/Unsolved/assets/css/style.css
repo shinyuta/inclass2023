@@ -1,9 +1,11 @@
-/* TODO: Label selector type */
+/* universal selector: one of the least specific selectors. Sets whole page to have
+font family */
 * {
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   }
 
-/* TODO: Label selector type */
+/* element selector: allows us to apply same font size to all paragraphs or 
+set height and width of a section. */
 body {
   background-color: lemonchiffon;
 }
@@ -22,12 +24,12 @@ figure {
   background-color: #f0ead6;
 }
 
-/* TODO: Label selector type */
+/* class selector: changes attributes of a specific class */
 .highlighted-text {
   font-weight: bolder;
 }
 
-/* TODO: Label selector type */
+/* id selector: applies style to a specific element. */
 #contact-section {
   background-color: #f0ead6;
 }

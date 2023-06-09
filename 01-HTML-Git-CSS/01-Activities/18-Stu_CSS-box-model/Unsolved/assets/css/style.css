@@ -9,7 +9,11 @@ img {
   width: 200px;
   height: 200px;
   background-color: lightblue;
-  /* TODO: Add a margin property */
-  /* TODO: Add a padding property */
-  /* TODO: Add a border property */
+  margin: 21px; 
+  /* 21px was the best look centering wise and on the box model */
+  padding: 20px;
+  /* 20px looked like the accurate padding size (the light blue,
+  uses background color) */
+  border: 8px solid blue;
+  /* added a 8px thick solid border in blue */
 }

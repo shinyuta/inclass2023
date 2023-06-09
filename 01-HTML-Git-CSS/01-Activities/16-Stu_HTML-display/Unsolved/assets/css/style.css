@@ -12,16 +12,17 @@ ul {
   color: #ffffff;
 }
 
-/* List items in navigation bar */
 li {
-  /* TODO: Add your code here */
+  display: inline; /*added inline to make sure the elements
+  are next to eachother (only necessary space) */
   list-style-type: none;
   font-size: 40px;
 }
 
-/* Boxes */
 img {
-  /* TODO: Add your code here */
+  display: block; /* changed from inline to block (?)
+  takes up entire width, without any space for other 
+  elements */
   margin: 0 auto;
 }
 
@@ -34,11 +35,10 @@ img {
 }
 
 #item-3 {
-  background-color: #999900;
-}
+  background-color: #999900; 
+} 
 
-/* Box 3 */
 #image-3 {
-  /* TODO: Add your code here */
-  display: none;
+  display: Block; /* block3: changed from none to block
+  so that the block is visible */ 
 }
