@@ -32,7 +32,8 @@ nav a {
 
 /* 
 What is the flex-wrap property? 
-TODO: Write your answer here 
+flex-wrap is how the content flows on the page going
+from line to line (goes the the next line) 
 */
 main {
   display: flex;
@@ -56,7 +57,8 @@ footer {
 
 /* 
 What does the justify-content property do? 
-TODO: Write your answer here 
+the justify content property defines the alignment along the main axis.
+spaced evenly to left or right side, etc.
 */
 .products {
   flex: 4;
@@ -69,8 +71,10 @@ TODO: Write your answer here
 
 /* 
 What is the flex property a shorthand property for?
+  flex is short for flex-grow flex shrink and flex basis
 What is it doing here? 
-TODO: Write your answer here 
+  in this, since only flex-basis has any value. Its making the element as close to 400px
+  as possible ("starting at") (no grow, no shrink)
 */
 .card {
   border-style: solid;
@@ -94,7 +98,10 @@ TODO: Write your answer here
 
 /* 
 What does the flex-direction property define?
+  flex direction shows the main axis (direction that elements
+  are placed in the container). 
 What is it doing here? 
+  its telling the main and navbar to work on a column direction.
 TODO: Write your answer here 
 */
 @media screen and (max-width: 768px) {

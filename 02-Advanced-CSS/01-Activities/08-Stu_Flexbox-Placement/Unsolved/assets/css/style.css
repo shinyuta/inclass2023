@@ -21,6 +21,8 @@ header {
 nav {
   display: flex;
   background-color: #d8a47f;
+  justify-content: flex-end;
+  /* added flex-end so that the nav would align to the right side of the screen*/
 }
 
 nav a {
@@ -28,6 +30,7 @@ nav a {
   padding: 14px 20px;
   text-decoration: none;
   text-align: center;
+  
 }
 
 footer {
@@ -42,6 +45,7 @@ footer {
   display: flex;
   width: 90%;
   margin: 1% auto;
+  align-items: flex-start;
 }
 
 .product button {
@@ -49,6 +53,8 @@ footer {
 }
 
 .product-slideshow {
+  align-items: center;
+  /* added align items to product slideshow which includes the product buttons and image. */
   display: flex;
 }
 
