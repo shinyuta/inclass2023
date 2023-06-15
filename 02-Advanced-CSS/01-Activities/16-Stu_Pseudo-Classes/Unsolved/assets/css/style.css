@@ -87,13 +87,20 @@ footer {
   color: #fff;
 }
 
+h3 {
+  font-size: 130%;
+}
 /* TODO: Add styles that will hide the resource links by default */
-
-
+.resources {
+  display: none;
+}
 
 /* TODO: Add styles that will display the links when the mouse hovers over the parent element */
-
-
+#h3_resources:hover .resources{
+  display: block;
+  /* had to make it so that the div (h3_resources) had .resources nested inside
+  than. when you hover over the div (show resources text) it shows the contents (.resources) */
+}
 
 @media screen and (max-width: 768px) {
   header, main {
