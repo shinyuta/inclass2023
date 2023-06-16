@@ -63,52 +63,39 @@ article p {
 
 /* TODO: Style the term/phrase - underline, black text, grab cursor */
 
-.tooltiptext {
+[data-definition] { 
+  /* replaced .tooltip with [data-definition] and also in the html */
   text-decoration: underline;
+  color: black;
+  cursor: grab;
+  border: 1px solid black;
+  position: relative;
 }
+
+/* uses span for the class tooltip */
 
 /* TODO: Position tooltip above the term/phrase, same color as header and nav links, no border-radius, smaller font size */
 
-.tooltip { 
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black; 
-}
-
-.tooltip .tooltiptext {
+[data-definition]::after {
+  /* content: "This is going to be a tooltip"; */
+  content: attr(data-definition);
+  position: absolute;
+  font-size: 80%;
+  left: 0;
+  top: -33px;
+  background-color: #13293d;
+  color: #fff;
+  padding: 4px;
   visibility: hidden;
-  width: 300px;
-  background-color: #ffffff;
-  color: black;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
-
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -60px;
-
-  opacity: 0;
-  transition: opacity 0.3s;
 }
 
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
+/* the above is the tooltip contents */
 
-.tooltip:hover .tooltiptext {
+[data-definition]:hover::after {
   visibility: visible;
-  opacity: 1;
 }
+
+/* this allows for hovering over the word to show tooltip */
 
 aside {
   width: 25%;

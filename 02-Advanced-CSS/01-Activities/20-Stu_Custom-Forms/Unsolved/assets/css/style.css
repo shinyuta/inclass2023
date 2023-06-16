@@ -85,7 +85,7 @@ button {
   cursor: pointer;
 }
 
-/* What does this CSS rule do? */
+/* opens dropdown menu with options*/
 select {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -94,6 +94,7 @@ select {
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
+  /* appearance to none and replace with image */
 }
 
 .text-input {
@@ -112,12 +113,12 @@ select:hover, button:hover {
   box-shadow: 0 0 5px #999;
 }
 
-/* What does this pseudo-class mean? */
+/* when the text-box is in focus (clicked or tabbed), the right side border changes   */
 .text-input:focus {
   border-right-width: 5px;
 }
 
-/* What does this pseudo-class mean? */
+/* this just represents any text-input box that has the placeholder shown. border-style dashed */
 .text-input:placeholder-shown {
   border-style: dashed;
 }
@@ -136,13 +137,13 @@ select:hover, button:hover {
   margin-right: 2%;
 }
 
-/* What does this selector do? */
+/* when checkbox is checked and has sibling label, style the label */
 .checkbox:checked + label {
   color: #999999;
   font-style: italic;
 }
 
-/* What does this selector do? */
+/* when the checkbox is checked and has siblign label, insert text*/
 .checkbox:checked + label::after {
   margin-left: 10px;
   font-size: 90%;
