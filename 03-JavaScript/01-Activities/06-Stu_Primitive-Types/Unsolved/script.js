@@ -7,11 +7,17 @@ var six;
 
 // Insert comments to explain what each console log below will log to the console
 console.log(typeof one); 
+// number
 console.log(typeof two); 
+// string
 console.log(typeof three); 
+// boolean
 console.log(typeof four); 
+// number (originally, overwritten later)
 console.log(typeof five);
+// string (originally, overwritten later)
 console.log(typeof six);
+// undefined (originally, overwritten later)
 
 four = "Hello!";
 five = false;
@@ -19,5 +25,8 @@ six = 23;
 
 // Insert comments to explain what each console log below will log to the console
 console.log(typeof four);
+// string
 console.log(typeof five);
+// boolean
 console.log(typeof six);
+// number
