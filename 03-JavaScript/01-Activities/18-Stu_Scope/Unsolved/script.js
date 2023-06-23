@@ -1,4 +1,7 @@
 // TODO: Declare variable 'shout' with the value 'Shout' so it's available to `justShout` and `shoutItAllOut` functions
+// added following line. Variable outside of the function
+var shout = "Shout"
+
 function justShout() {
   console.log(shout + ", " + shout);
   return;
@@ -20,6 +23,8 @@ function sayLions() {
 }
 
 function sayTigers() {
+  // added following line. variable declared inside the function
+  var animal = "Tigers";
   console.log("and " + animal + " and "); 
   return;
 }
@@ -28,8 +33,9 @@ function sayTigers() {
 var bears = "Bears";
 
 function sayBears() {
-    var bears = "Pandas";
-    console.log(bears + "! OH MY!");
+    // var bears = "Pandas";
+    // declared bears variable once in the console.log
+    console.log(bears='Bears' + "! OH MY!");
     return;
 }
 
@@ -38,9 +44,10 @@ sayTigers();
 sayBears();
 
 // TODO: The variable 'sing' should be declared once in the local scope.
-var sing = "Sing"; 
+// var sing = "Sing"; 
 
 function singAlong() {
+  var sing = "Sing"; 
   console.log(sing + ",");
   var singASong = function () {
     console.log(sing + " a Song.");
@@ -49,3 +56,16 @@ function singAlong() {
 }
 
 singAlong();
+
+
+// bonus
+// What is lexical scope?
+// Lexical scope means the location where something is defined (not just called)
+
+// function getName() {
+//   const myName = "Oluwatobi";
+//   return myName;
+// }
+
+// in this example, myName's lexical scope is the function getName() (getName()'s local environment)
+// in other words getName() is myName's definition space
