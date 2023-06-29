@@ -21,3 +21,20 @@ site3El.children[1].children[0].setAttribute("alt", "women working");
 site3El.children[1].children[0].setAttribute("style", "padding:10px;");
 
 // Write Your Code Below
+
+var h4elements = document.querySelectorAll('h4');
+console.log(h4elements)
+// selects all h4 elements
+
+for (var i = 0; i < h4elements.length; i++) {
+    h4elements[i].setAttribute('style', 'color: blue; font-size: 30px; font-weight: bold; ');
+   }
+// iterates through all h4 elements and applied attributes to each one
+
+document.body.children[0].setAttribute('style', 'padding-left: 10px; margin: 0px; ')
+// document.querySelector('h1').setAttribute('style', 'padding-left: 10px; margin: 0px; ')
+// document.querySelectorAll('h1')[0].setAttribute('style', 'padding-left: 10px; margin: 0px; ')
+
+// body.children[0] is the title, changed attributes of the title.
+// + different ways to finding same thing using querySelector and qsAll
+

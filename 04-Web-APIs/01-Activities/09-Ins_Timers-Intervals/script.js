@@ -28,7 +28,7 @@ function sendMessage() {
   var imgEl = document.createElement("img");
   imgEl.setAttribute("src", "images/image_1.jpg");
   mainEl.appendChild(imgEl);
-
+  
 }
 
 setTime();
