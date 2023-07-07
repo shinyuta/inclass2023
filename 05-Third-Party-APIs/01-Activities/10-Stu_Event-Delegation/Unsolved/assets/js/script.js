@@ -33,3 +33,10 @@ function handleFormSubmit(event) {
 // TODO: Use event delegation and add an event listener to `shoppingListEl` to listen for a click event on any element with a class of `.delete-item-btn` and execute the function created above
 
 shoppingFormEl.on('submit', handleFormSubmit);
+
+shoppingListEl.on('click', '.delete-item-btn', function() {
+  // window.alert('hello')
+  // to check window delegation
+  var buttonClicked = $(evt.target)
+  buttonClicked.parent('li').remove()
+})
