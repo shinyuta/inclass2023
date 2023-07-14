@@ -73,3 +73,9 @@ Use [Google](https://www.google.com) or another search engine to research this.
 
 ---
 © 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+
+SOLVED: NEEDED TO ADD USER/USERNAME (not all caps) at the end of the link in order for the curl command to retrieve data from the server.
+
+- was incorrect, just forgot the http(s) in the link.
+
+* from google : curl is a command-line tool to transfer data to or from a server, using any of the supported protocols 
