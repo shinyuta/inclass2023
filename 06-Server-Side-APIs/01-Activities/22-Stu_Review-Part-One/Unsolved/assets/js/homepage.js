@@ -22,10 +22,12 @@ var formSubmitHandler = function (event) {
 var buttonClickHandler = function (event) {
   // What is `event.target` referencing?
   // TODO: Write your answer here
+  // the event is the button click (shown at the bottom of the js)
   var language = event.target.getAttribute('data-language');
 
   // Why is this `if` block in place?
   // TODO: Write your answer here
+  // 
   if (language) {
     getFeaturedRepos(language);
 
@@ -56,6 +58,7 @@ var getUserRepos = function (user) {
 var getFeaturedRepos = function (language) {
   // What are the query parameters doing here?
   // TODO: Write your answer here
+  //
   var apiUrl = 'https://api.github.com/search/repositories?q=' + language + '+is:featured&sort=help-wanted-issues';
 
   fetch(apiUrl).then(function (response) {
@@ -74,6 +77,7 @@ var displayRepos = function (repos, searchTerm) {
     repoContainerEl.textContent = 'No repositories found.';
     // What would happen if there was no `return;` here?
     // TODO: Write your answer here
+    //the rest of the function will continue and run
     return;
   }
 
@@ -82,6 +86,7 @@ var displayRepos = function (repos, searchTerm) {
   for (var i = 0; i < repos.length; i++) {
     // What is the result of this string concatenation?
     // TODO: Write your answer here
+    // the result will be github-username/github-repo-name
     var repoName = repos[i].owner.login + '/' + repos[i].name;
 
     var repoEl = document.createElement('div');
