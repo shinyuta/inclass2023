@@ -25,8 +25,13 @@ const isPrime = num => {
 
 // TODO: Describe how filter is working in this example. What will the value of primeArray be? 
 const primeArray = originalArray.filter(isPrime);
+// the value of prime array will be 3, 2, and 5. This is because the filter function (only truthy) is using the function isPrime to filter
+// any prime numbers out of the original array into the primearray
 
+console.log(primeArray)
 
 // TODO: Describe how filter is working in this example. What will the value of moreThan5Array be? 
 const moreThan5Array = originalArray.filter(num => num > 5);
+// filters out anything from the original array that is greater than 5 (truthy). So the value will be 10.
 
+console.log(moreThan5Array)

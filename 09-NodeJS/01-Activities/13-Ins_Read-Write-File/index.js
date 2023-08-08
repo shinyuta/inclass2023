@@ -9,6 +9,8 @@ fs.readFile('data.csv', 'utf8', (error, data) =>
 
 // Uncomment this next function to write to the file with anything you pass in as process.argv[2]
 
-// fs.writeFile('log.txt', process.argv[2], (err) =>
-//   err ? console.error(err) : console.log('Success!')
-// );
+fs.writeFile('log.txt', process.argv[2], (err) =>
+  err ? console.error(err) : console.log('Success!')
+);
+
+// created a txt file with test when using node index.js test
