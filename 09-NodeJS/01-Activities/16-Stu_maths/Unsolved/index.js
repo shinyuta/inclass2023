@@ -8,9 +8,10 @@ const numOne = parseInt(process.argv[3]);
 const numTwo = parseInt(process.argv[4]);
 // used parseInt to replace strings with integers (instead of adding two strings for example)
 
-console.log(operation);
-console.log(numOne);
-console.log(numTwo);
+console.log(`the operation is ${operation}`);
+console.log(`the first number is ${numOne} and the second number is ${numTwo}.`);
+
+console.log('The answer is:')
 
 // TODO: Create a `switch` statement that accepts an `operation` parameter
 // and each `case` uses the corresponding `maths` method
