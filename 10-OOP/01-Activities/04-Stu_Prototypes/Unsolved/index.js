@@ -1,4 +1,6 @@
 // TODO: Add a comment describing what kind of function this is
+
+// this is a construction function that takes in a few parameters
 function BlogPost(authorName, title, text, createdOn) {
   this.authorName = authorName;
   this.title = title;
@@ -11,6 +13,9 @@ function BlogPost(authorName, title, text, createdOn) {
 }
 
 // TODO: Add a comment describing the purpose of `.prototype` in this method declaration
+// .prototype will make a method for a constrocter model that deosn't have to be used compared to imbedding it into the
+// constructor
+// creates a new blogPost object
 BlogPost.prototype.addComent = function(comment) {
   this.comments.push(comment);
 };
@@ -26,3 +31,4 @@ post.addComent('Nice post, I like it!');
 
 // TODO: Add a comment describing what you expect to see printed in the console
 console.log(post.comments);
+ 

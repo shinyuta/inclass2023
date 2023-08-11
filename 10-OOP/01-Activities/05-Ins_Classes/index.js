@@ -9,6 +9,10 @@ class Cat {
   nap() {
     console.log('Zzzzzzzzz');
   }
+
+  eat() {
+    console.log(this.eat);
+  }
 }
 
 // Sets the variables "catOne" and "catTwo" to a Cat object and initializes with name, age, and breed properties
