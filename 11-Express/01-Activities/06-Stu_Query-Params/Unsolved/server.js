@@ -14,7 +14,7 @@ const sortHelper = (type) =>
 
 app.get('/api/terms/', (req, res) => {
   // TODO: Add a comment describing the req.query object
-
+// checks to see if the requrest has query parameters
   const hasQuery = Object.keys(req.query).length > 0;
 
   if (hasQuery && req.query.sort === 'dsc') {
@@ -33,7 +33,7 @@ app.get('/api/terms/', (req, res) => {
 
 app.get('/api/term/:term', (req, res) => {
   // TODO: Add a comment describing the content of req.params in this instance
-
+  // get the request term from the parameter
   const requestedTerm = req.params.term.toLowerCase();
 
   for (let i = 0; i < termData.length; i++) {
@@ -62,6 +62,7 @@ app.get('/api/terms/:category', (req, res) => {
 });
 
 // TODO: Add a comment describing what this route will return
+// route to display the categories
 
 app.get('/api/categories', (req, res) => {
   const categories = termData.map((term) => term.category);

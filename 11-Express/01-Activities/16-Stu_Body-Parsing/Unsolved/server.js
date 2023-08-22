@@ -6,8 +6,10 @@ const reviews = require('./db/reviews');
 const app = express();
 
 // TODO: Implement middleware for the parsing of JSON data
+app.use(express.json());
 
 // TODO: Implement middleware for parsing of URL encoded data
+app.use(express.urlencoded({ extended: true }));
 
 // GET request for ALL reviews
 app.get('/api/reviews', (req, res) => {
@@ -72,7 +74,7 @@ app.post('/api/upvotes/:review_id', (req, res) => {
         return;
       }
     }
-    res.status(404).json('Review ID not found');
+    res.status(404).send('Review ID not found');
   }
 });
 
