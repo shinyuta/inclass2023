@@ -44,17 +44,27 @@ app.post('/api/reviews', (req, res) => {
       review_id: uuid(),
     };
 
+    fs.readFile('/db/reviews.json', 'utf8', (err, data) => {
+      if (err) {
+        console.log(err);
+      } else {
+        const parsedReviews = JSON.parse(data);
+
+        parsedReviews.push(newReview);
+      
+
+        fs.writeFile(`./db/reviews.json`, 
+          JSON.stringify(parsedReviews, null, 4),
+          (writeErr) =>
+            writeErr
+            ? console.error(err)
+            : console.info('succefully updated reviews!')
+        );
+      }   
+     });
+
     // Convert the data to a string so we can save it
     const reviewString = JSON.stringify(newReview);
-
-    // Write the string to a file
-    fs.writeFile(`./db/reviews.json`, reviewString, (err) =>
-      err
-        ? console.error(err)
-        : console.log(
-            `Review for ${newReview.product} has been written to JSON file`
-          )
-    );
 
     const response = {
       status: 'success',

@@ -10,6 +10,8 @@ const app = express();
 // Middleware for parsing JSON and urlencoded form data
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+//added the below line, as clog wasn't being used.
+app.use(clog);
 app.use('/api', api);
 
 app.use(express.static('public'));
