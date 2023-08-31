@@ -26,6 +26,7 @@ CREATE TABLE instructors (
   active BOOLEAN NOT NULL,
   date_updated DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL
 );
+npm start
 
 CREATE TABLE classrooms (
   id INT NOT NULL,
