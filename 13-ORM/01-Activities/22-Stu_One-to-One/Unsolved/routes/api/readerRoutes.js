@@ -6,6 +6,7 @@ router.get('/', async (req, res) => {
   try {
     const readerData = await Reader.findAll({
       // TODO: Add a comment describing the functionality of this property
+      // perform a join between all library cards and associated readers
       include: [{ model: LibraryCard }],
     });
     res.status(200).json(readerData);

@@ -6,9 +6,15 @@ const User = require('../../models/User');
 
 // GET a user
 router.get('/:id', async (req, res) => {
-  const userData = await User.findByPk(req.params.id).catch((err) =>
-    res.json(err)
-  );
+  try { const userData = await User.findByPk(req.params.id)
+    if (userData) {
+      res.status(200).json(userData)
+    } else {
+      res.status(404).json({ "message": "no user with this id"})
+    }
+  } catch (err) {
+    res.status(500).json(err)
+  }
   res.json(userData);
 });
 

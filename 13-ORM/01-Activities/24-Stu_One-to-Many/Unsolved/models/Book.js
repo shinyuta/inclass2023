@@ -35,6 +35,14 @@ Book.init(
       type: DataTypes.BOOLEAN,
       defaultValue: true
     },
+    // added reader id
+    reader_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'reader',
+        key: 'id',
+      },
+    },
   },
   {
     sequelize,
