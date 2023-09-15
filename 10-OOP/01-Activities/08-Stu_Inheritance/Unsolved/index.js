@@ -1,4 +1,5 @@
 // TODO: Create a class constructor named ForumItem that takes in 'authorName', 'text', and 'createdOn'.
+
 // function ForumItem(authorName, text, createdOn) {
 //   this.authorName = authorName;
 //   this.text = text; 
