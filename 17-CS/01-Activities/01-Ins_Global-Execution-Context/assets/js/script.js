@@ -17,3 +17,4 @@ alert("What's up doc?");
 
 // 4) Calling sayHello, places it on the call stack which creates a new function execution context
 sayHello("Gabby");
+
