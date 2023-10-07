@@ -11,11 +11,7 @@ const { describe } = require("node:test");
 //   }
 // }
 
-const information = (lessons) => ({
-  getInfo: () =>
-    console.log(`${lessons.title} - ${lessons.description}`),
-});
-
+// constructor
 const Lesson = (title, description) => {
   const lessons = {
     title,
@@ -26,6 +22,11 @@ const Lesson = (title, description) => {
     ...information(lessons)
   };
 };
+
+const information = (lessons) => ({
+  getInfo: () =>
+    console.log(`${lessons.title} - ${lessons.description}`),
+});
 
 const csForJS = Lesson('Module 17 - Computer Science', 'CS for JS');
 csForJS.getInfo();
