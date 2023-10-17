@@ -1,6 +1,7 @@
 const express = require('express');
 const db = require('./config/connection');
 // TODO: Add a comment describing the functionality of the code below
+// require model 
 const { Book } = require('./models');
 
 const PORT = process.env.PORT || 3001;
@@ -11,7 +12,7 @@ app.use(express.json());
 
 app.get('/all-books', async (req, res) => {
   try {
-    // TODO: Add a comment describing the functionality of the code below
+    // using book model to find all documents that are instances of that model.
     const result = await Book.find({});
     res.status(200).json(result);
   } catch (err) {
