@@ -19,11 +19,12 @@ const userSchema = new Schema(
 userSchema.virtual('fullName').get(function () {
   return `${this.first} ${this.last}`;
 })
-// TODO: Create a setter for the virtual that sets the value of the first and last name, given just the `fullName`
-.set(function(v) {
-  const firstName = v.split(' ')[0];
-  const lastName = v[1];
-})
+  // Setter to set the first and last name
+  .set(function(v) {
+    const first = v.split(' ')[0];
+    const last = v.split(' ')[1];
+    this.set({ first, last });
+  })
 
 // Initialize our User model
 const User = model('user', userSchema);
