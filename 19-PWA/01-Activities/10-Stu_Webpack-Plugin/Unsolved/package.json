@@ -18,6 +18,10 @@
     "html-webpack-plugin": "^5.5.0",
     "style-loader": "^3.3.1",
     "webpack": "^5.64.4",
-    "webpack-cli": "^4.9.1"
+    "webpack-cli": "^4.9.1",
+    "mini-css-extract-plugin": "^2.7.6"
+  },
+  "dependencies": {
+    "mini-css-extract-plugin": "^2.7.6"
   }
 }
