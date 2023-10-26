@@ -6,7 +6,7 @@ const feline = {
   id: 1,
 };
 
-export default function Display() {
+export default function Display(props) {
   return (
     <div>
         {/* TODO: Write logic that will render a Card component for the kitten */}
