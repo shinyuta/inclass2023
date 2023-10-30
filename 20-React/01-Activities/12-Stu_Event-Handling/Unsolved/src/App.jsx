@@ -3,7 +3,12 @@ import Greeting from "./components/Greeting";
 
 // Our App component returns the Greeting component
 function App() {
-  return <Greeting />;
+
+  const welcomeClass = (studentName) => {
+    alert(`Welcome, ${studentName}!`)
+  };
+
+  return <Greeting clickHandler = {welcomeClass} />;
 }
 
 export default App;

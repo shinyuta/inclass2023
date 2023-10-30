@@ -1,4 +1,4 @@
-function Greeting() {
+function Greeting(props) {
   // welcomeStudent is a helper function which takes in a studentName parameter and uses it to alert a string
   const welcomeStudent = (studentName) => {
     alert(`Welcome, ${studentName}!`)
@@ -10,19 +10,19 @@ function Greeting() {
       <div className="list-group">
         {/* TODO: Resolve the issue so that the welcomeStudent function properly alerts the name of the selected student when the button is clicked. */}
         <button 
-          onClick={welcomeStudent('Mary')} 
+          onClick={() => props.clickHandler("Mary")}
           className="list-group-item list-group-item-action"
         >
             Mary
         </button>
         <button 
-          onClick={welcomeStudent('Cole')} 
+          onClick={() => props.clickHandler("Cole")}
           className="list-group-item list-group-item-action"
         >
             Cole
         </button>
         <button 
-          onClick={welcomeStudent('Rebecca')} 
+          onClick={() => props.clickHandler("Rebecca")}
           className="list-group-item list-group-item-action"
         >
             Rebecca
