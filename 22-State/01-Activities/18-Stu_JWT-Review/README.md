@@ -2,19 +2,25 @@
 
 Work with a partner to resolve the following issue(s):
 
+* As an authenticated user, I want my username to display on the profile link in the header.
+
 * As a user, I want to see my own thoughts when I visit the profile page.
 
-## Expected Behavior
+* As a user, I want to enter my thoughts and comments into the appropriate forms, and have my submitted data appear on the page.
 
-A logged-in user should see the thoughts that they created when they visit the `/me` route.
+## Acceptance Criteria
 
-## Actual Behavior
+* It is done when an authenticated user can see a link in the header which reflects their username.
 
-The profile page displays a message informing the user that they must be logged in to see the content.
+* It is done when an authenticated user can navigate to the `/me` route and see their post history.
 
-## Steps to Reproduce the Problem
+* It is done when a user can see their newly submitted thoughts display on the page.
 
-1. Navigate to `26-Stu_Resolver-Context/Unsolved` from the command line.
+* It is done when a user can see their newly submitted comments display on the page.
+
+## Steps to Setup
+
+1. Navigate to `18-Stu_JWT-Review/Unsolved` from the command line.
 
 2. Run `npm install`, `npm run seed`, and `npm run develop`.
 
@@ -29,10 +35,6 @@ The profile page displays a message informing the user that they must be logged 
     }
     ```
 
-5. Navigate to <localhost:3000/me>.
-
-6. The app doesn't display the thoughts from this user.
-
 ## Assets
 
 The following image demonstrates the profile page's appearance and functionality:
@@ -43,7 +45,9 @@ The following image demonstrates the profile page's appearance and functionality
 
 ## 💡 Hints
 
-* What is the difference between the server-side `QUERY_ME` and `QUERY_SINGLE_USER` query resolvers that would cause one to work and the other to not work?
+* What tool can we use to debug the encoded payload within the JWT token?
+
+* Which entity in the JWT token cycle is responsible for signing and verifying the integrity of the token?
 
 ## 🏆 Bonus
 

@@ -15,7 +15,6 @@ export default function reducer(state, action) {
   // Depending on the action we create a new version of state after the desired action is preformed
   switch (action.type) {
     case ADD_STUDENT: {
-      // Generate a unique id for this student
       const newStudentId = createId(state.students);
 
       // Take a copy of the new student's data and add an id to it
@@ -75,7 +74,7 @@ export default function reducer(state, action) {
       };
     }
 
-    // Set the student name to the value in the payload. Used in the input field.
+    // Take a copy of existing state and modify the `studentName` property (initially an empty string). Used for input field in the UI.
     case SET_STUDENT_NAME: {
       return {
         ...state,
@@ -83,7 +82,7 @@ export default function reducer(state, action) {
       };
     }
 
-    // Set the student major to the value in the payload. Used in the dropdown menu for majors.
+    // Take a copy of existing state and modify the `studentMajor` property (initially an empty string). Used for dropdown field in the UI.
     case SET_STUDENT_MAJOR: {
       return {
         ...state,

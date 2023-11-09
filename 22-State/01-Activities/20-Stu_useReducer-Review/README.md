@@ -2,19 +2,15 @@
 
 Work with a partner to add comments describing the functionality of the code found in [StudentList](Unsolved/src/components/StudentList.js).
 
-## Setup
-
-Copy the `src` directory from the unsolved folder into `00-practice-app` before you begin.
-
 ## 📝 Notes
 
 When is local state being used as opposed to global state in this application?
 
-What do we need to pass to the `dispatch()` function to add a new major? 
+What do we need to pass to the `dispatch()` function to add a new major?
 
-Refer to the documentation: 
+Refer to the documentation:
 
-[React documentation on useReducer hook](https://reactjs.org/docs/hooks-reference.html#usereducer)
+[React documentation on useReducer hook](https://react.dev/reference/react/useReducer)
 
 ---
 

@@ -6,10 +6,6 @@ Work with a partner to resolve the following issue(s):
 
 * As a developer, I want to be able to diagnose and fix the issue associated with the reducer that is causing the tests to fail.
 
-## Setup
-
-Copy the `src` directory from the unsolved folder into `00-practice-app` before you begin.
-  
 ## Expected Behavior
 
 When the tests are run, all of them should pass.

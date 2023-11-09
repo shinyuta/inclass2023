@@ -4,10 +4,6 @@ Work with a partner to implement the following user story:
 
 * As a developer, I want to have access to a global state object to avoid passing props down through multiple child components.
 
-## Setup
-
-Copy the `src` directory from the unsolved folder into `00-practice-app` before you begin.
-
 ## Acceptance Criteria
 
 * It's done when the `studentList` component pulls the global state variables `students` and `majors`.

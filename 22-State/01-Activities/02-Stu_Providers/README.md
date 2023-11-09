@@ -4,10 +4,6 @@ Work with a partner to implement the following user story:
 
 * As a developer, I want to consume data/values from a single, global source across my entire React application.
 
-## Setup
-
-Copy the `src` directory from the unsolved folder into `00-practice-app` before you begin.
-
 ## Acceptance Criteria
 
 * It's done when a global state object has been defined with the following properties: an array of students with `name` and `major` properties.

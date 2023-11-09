@@ -1,7 +1,7 @@
 // TODO: Add a comment briefly describing the functionality of `useContext`
 // Your comment here
 
-import React, { createContext, useContext } from 'react';
+import { createContext, useContext } from 'react';
 
 // TODO: Add a comment describing the React hook that `useProductReducer` makes use of
 // Your comment here

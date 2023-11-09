@@ -1,3 +1,4 @@
+// Import our actions. Actions are in all caps.
 import {
   ADD_STUDENT,
   REMOVE_STUDENT,
@@ -7,8 +8,7 @@ import {
 } from './actions';
 import createId from './createId';
 
-// TODO: Add a comment explaining what a reducer is
-// Your comment here
+// Reducer accepts state and an action, returns a new state
 export default function reducer(state, action) {
   switch (action.type) {
     case ADD_STUDENT: {
@@ -30,21 +30,20 @@ export default function reducer(state, action) {
       };
     }
     case UPDATE_STUDENT: {
-      // TODO: Add a comment describing how we get the student index
-      // Your comment here
       const studentIndex = state.students.findIndex(
         (student) => student.id === action.payload.id
       );
 
-      // TODO: Add a comment describing what the spread operator is doing
-      // Your code here
+      // Variable to hold our student object
       const updatedStudent = {
         ...state.students[studentIndex],
         ...action.payload,
       };
 
+      // Make a copy of our current students array
       const newStudentsList = [...state.students];
 
+      // Assign the updated student to their existing position in the newStudentsList
       newStudentsList[studentIndex] = updatedStudent;
 
       return {
@@ -53,14 +52,12 @@ export default function reducer(state, action) {
       };
     }
     case ADD_MAJOR: {
-      // TODO: Add a comment explaining what this case is returning
       return {
         ...state,
         majors: [...state.majors, action.payload],
       };
     }
     case REMOVE_MAJOR: {
-      // TODO: Add a comment explaining what this case is returning
       return {
         ...state,
         majors: [...state.majors].filter((major) => major !== action.payload),

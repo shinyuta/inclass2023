@@ -1,6 +1,6 @@
 # 📐 Add Comments to Implementation of Stripe
 
-Work with a partner to add comments describing the functionality of the code found in [Cart/index.js](./Unsolved/client/src/components/Cart/index.js).
+Work with a partner to add comments describing the functionality of the code found in [Cart/index.js](./Unsolved/client/src/components/Cart/index.jsx).
 
 ## 📝 Notes
 

@@ -13,7 +13,7 @@ First we will create an app that will eventually be used by GitHub Actions to au
 1. Create a new boilerplate React application in a directory of your choice. After the app has been created, navigate to that directory, as follows:
 
     ```sh
-    npx create-react-app github-cd
+    npm create vite@latest github-cd
     cd github-cd
     ```
 
@@ -29,14 +29,14 @@ First we will create an app that will eventually be used by GitHub Actions to au
 
 The `Procfile` is a small text file that will tell Heroku which command to execute to start your app.
 
-1. Create a `Procfile` at the root of the project directory, with a `web` command that tells Heroku which npm script needs to run for the application to start. We can do this quickly, from the command line, with the following command: 
+1. Create a `Procfile` at the root of the project directory, with a `web` command that tells Heroku which npm script needs to run for the application to start. We can do this quickly, from the command line, with the following command:
 
     ```sh
     echo "web: npm start" > Procfile
     ```
 
    * The `echo` command outputs the string that is passed inside the quotation marks.
-   
+
    * The `>`, or the **redirection operator**, means that anything inside the quotes will be redirected to the destination that follows the `>`. In this case, we inject the string into `Procfile`. The file doesn't exist, so Bash creates one.
 
 2. Create a new folder called `.github` and another folder inside of it called `workflows`. After this, we will create the `main.yml` file, defining the workflow for GitHub. See the following example:

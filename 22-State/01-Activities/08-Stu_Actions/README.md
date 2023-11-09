@@ -2,10 +2,6 @@
 
 Work with a partner to add comments to `/utils/actions.js` to describe what each action's inputs are and what the net effect will be on the new state.
 
-## Setup
-
-Copy the `src` directory from the unsolved folder into `00-practice-app` before you begin.
-
 ## 💡 Notes
 
 Check `/utils/reducers.js` and the associated test file to learn more about each action.

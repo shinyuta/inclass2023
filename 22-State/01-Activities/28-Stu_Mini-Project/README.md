@@ -2,13 +2,9 @@
 
 In this activity, you will refactor an application that uses the Context API so that it handles state using the open source JavaScript library Redux.
 
-## Setup
-
-Copy the `src` directory from the `Develop` folder into `00-practice-app` before you begin.
-
 ## Instructions
 
-* Begin by installing the `redux` and `react-redux` libraries with `npm`.
+* Begin by installing the `redux`, `react-redux`, `vitest`, `happy-dom`, and `@testing-library/react` libraries with `npm`.
 
 * Create a `store.js` file in the `utils` directory. This file should do the following:
 
@@ -38,7 +34,7 @@ What needs to be changed, if anything, inside the `reducers.js` file?
 
 If you have completed this activity, work through the following challenge with your partner to further your knowledge:
 
-* Instead of using `React.createContext`, how can we use `Redux.createStore` and the existing `reducer` to generate the initial state and to calculate any future updates?
+* Instead of using `createContext`, how can we use `Redux.createStore` and the existing `reducer` to generate the initial state and to calculate any future updates?
 
 Use [Google](https://www.google.com) or another search engine to research this.
 

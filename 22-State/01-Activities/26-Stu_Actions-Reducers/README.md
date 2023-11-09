@@ -10,7 +10,7 @@ How can we account for multiple types of actions inside the reducer?
 
 Refer to the documentation:
 
-[React documentation on useReducer](https://reactjs.org/docs/Hooks-reference.html#usereducer)
+[React documentation on useReducer](https://react.dev/reference/react/useReducer)
 
 ---
 
